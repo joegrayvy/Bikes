@@ -1,0 +1,105 @@
+<!--
+    Website to list my bikes and navigate through the different options.
+    Part of the intro to JS course 2024
+    Started a new webpage because the original Equipment Server instruction
+    manual lacked flexibility
+    JG 27/May/2024
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/MyStyles.css">
+    </head>
+
+<html>
+    <title>Joe's Bikes and Cycling Page</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</html>
+
+
+<body>
+
+<p id="Top"></p>
+
+<h1>Webpage for all my bikes, rides and cycling info<br></h1>
+
+<!--Top picture and blurb-->
+<img src="images\joepicture.jpg" alt="Joe and Bike" width="346" height="248">
+<p>Hi, my name is Joe and I like to ride bikes, all kinds of bikes. I just think it's a great way to get outside, enjoy some fresh air and explore the world.<br><br>Oh, and I like coffee and cake ...</p>
+
+
+<h2>My Current Bikes (click to go to the relevent area)</h2>
+<p>Q: Is 5 bikes too many? </p>
+<p>A: No because the correct number of bikes is n+1 (where n = the number of bikes you currently have)</p>
+
+<!--List of current bikes-->
+<ul>
+    <li>Swen</li>
+    <li>JACK</li>
+    <li>Whytey</li>
+    <li>Tommy</li>
+    <li>Scrappy</li>
+</ul>
+
+<!--Table of current bikes specs-->
+<h2>Table showing my current bikes and their specifications</h2>
+<table>
+    <!--Headings-->
+    <tr>
+         <th>Bike</th>
+         <th>Make</th>
+         <th>Model</th>
+         <th>Colour</th>
+         <th>Year</th>
+         <th>Groupset</th>
+         <th>Wheels</th>
+    </tr>
+
+    <!--Swen-->
+    <tr>
+        <!--Link to Swen section in name-->
+        <td><a href="#Swen">Swen</a></td>
+        <td>Specialized S-Works</td>
+        <td>Tarmac SL7</td>
+        <td>Carbon Chameleon Green</td>
+        <td>2021</td>
+        <td>Shimano Ultegra 50/34 x 11-32</td>
+        <td>Zipp 404 Firecrest</td>
+        <td>
+            <img src="images\Swen.jpg" alt="Swen" width="173" height="124" style="opacity: 0.5;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'">
+        </td>
+    </tr>
+
+
+</table>
+
+
+<h2>My retired bikes</h2>
+<p>Broken or otherwise gotten rid of (upgraded)</p>
+<!--List of old bikes-->
+<ul>
+    <li>Puch</li>
+    <li>Planet X</li>
+    <li>Single Speed Ute</li>
+    <li>Single SPeed Ute #2</li>
+    <li>Bianchi</li>
+    <li>Peugeot</li>
+    <li>Oxford Ute</li>
+    <li>Eddie</li>
+    <li>Crux</li>
+
+</ul>
+<br>
+
+<!--SWEN-->
+
+<h3 id="Swen">Swen</h3>
+<img src="images\swen.jpg" alt="swen" width="403" height="302">
+<p>My current racing bike</p>
+
+<p><a href="#Top">Top</a></p>
+
+
+</body>
