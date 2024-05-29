@@ -59,13 +59,13 @@
 <p>Is the current day a weekday?</p>
 <p id="weekday"></p>
 
-
-
-
-
-<h2>My Current Bikes (click to go to the relevent area)</h2>
+<br>
 <p>Q: Is 5 bikes too many? </p>
 <p>A: No because the correct number of bikes is n+1 (where n = the number of bikes you currently have)</p>
+<br>
+
+<h2>My Current Bikes (click to go to the relevent area)</h2>
+
 
 
 <!-- JS EXERCISE 4 -->
@@ -74,14 +74,16 @@
     of the web page
 -->
 
-<!--List of current bikes-->
-<ul>
-    <li id="bike0"></li>
-    <li id="bike1"></li>
-    <li id="bike2"></li>
-    <li id="bike3"></li>
-    <li id="bike4"></li>
-</ul>
+
+<p id="bikes"></p>
+
+<p id="bikeDistance"></p>
+
+<p id="totalDistance"></p>
+
+
+<!-- JS EXERCISE 5 - character count button-->
+<!--moved into the feedback from below-->
 
 
 
@@ -145,3 +147,54 @@
 
 
 </body>
+
+
+<!-- FEEDBACK FORM -->
+<form action="http://example.php" onsubmit="return validateForm()">
+    <fieldset>
+        <legend>Feedback Form</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required="required"/><br>
+        
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required="required"/>(8 or more characters)<br><br>
+
+        Did you find the answer you were looking for?:<br>
+        <input type="radio" name="help" value="yes" />Yes
+        <input type="radio" name="help" value="no" />No<br><br>
+
+        On a scale of 1-5 how useful did you find this webpage? 1=Bad, 5=Good:<br>
+        <input type="radio" name="useful" value="one" />1
+        <input type="radio" name="useful" value="two" />2
+        <input type="radio" name="useful" value="three" />3
+        <input type="radio" name="useful" value="four" />4
+        <input type="radio" name="useful" value="five" />5<br><br>
+
+        Which piece of equipment were you researching?:
+        <select name="devices">
+            <option value="Ovens" selected="selected">Ovens</option>
+            <option value="MSCollection">MS Collection</option>
+            <option value="AMS">AMS</option>
+            <option value="SerialServer">Serial Servers</option>
+            <option value="Nudams">Nudams</option>
+            <option value="ServerSettings">Server Settings</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        Please enter your email address:<br>
+        <input type="email" name="email" /><br><br>
+
+        Any other comments (450 characters max):<br>
+        <textarea id="comments" name="comments" rows="10" cols="45" maxlength="450"></textarea><br>
+        <button type="button" onclick="commentsCount()">Number of Characters</button>
+        <p id="charCount"></p>
+
+        <p id="passwordError" style="color:red;"></p>
+        
+        <input type="submit" value="Submit" /><br><br>
+
+    </fieldset>
+</form>
+
+
