@@ -8,9 +8,18 @@
 
 <!DOCTYPE html>
 
+
 <head>
+
+    <!-- CSS HERE -->
+    <!-- Added external CSS for 03 CSS exercise-->
     <link rel="stylesheet" href="css/MyStyles.css">
-    </head>
+
+    <!-- JAVASCRIPT HERE -->
+    <!-- I moved my JavaScript functions to an external file here, originally embedded in the HTML below -->
+    <script src="js/jsFunctions.js" defer></script>
+
+</head>
 
 <html>
     <title>Joe's Bikes and Cycling Page</title>
@@ -27,21 +36,54 @@
 
 <!--Top picture and blurb-->
 <img src="images\joepicture.jpg" alt="Joe and Bike" width="346" height="248">
-<p>Hi, my name is Joe and I like to ride bikes, all kinds of bikes. I just think it's a great way to get outside, enjoy some fresh air and explore the world.<br><br>Oh, and I like coffee and cake ...</p>
+
+
+<!-- JS EXERCISE 1 -->
+<!--Added to display current date/time for 04 JS exercise 1 = show date button. JS code moved to .js file in js folder-->
+<p id="date">What's the date today?</p>
+<button type="button" onclick="showDate()">Show Date</button>
+
+
+<!-- JS EXERCISE 2 -->
+<!--Added to change text 04 JS exercise 2 = use JS to alter text. JS code moved to .js file in js folder-->
+<p id="aboutme">
+    Hi, my name is Joe and I like to ride bikes, all kinds of bikes. I just think it's a great way to get outside, enjoy some fresh air and explore the world.
+    <br><br>Oh, and I like coffee and cake ...<br><br>
+    I learned to ride a bike when I was around 8 years old and apart from time off in my 20's I've been cycling ever since.
+</p>
+<button type="button" onclick="italicizeText()">Italicize this</button>
+
+
+<!-- JS EXERCISE 3 -->
+<!--04 JS exercise 3 = is the current day a weekday?-->
+<p>Is the current day a weekday?</p>
+<p id="weekday"></p>
+
+
+
 
 
 <h2>My Current Bikes (click to go to the relevent area)</h2>
 <p>Q: Is 5 bikes too many? </p>
 <p>A: No because the correct number of bikes is n+1 (where n = the number of bikes you currently have)</p>
 
+
+<!-- JS EXERCISE 4 -->
+<!-- 
+    declare an array in JavaScript. Output each element of the array on a new line
+    of the web page
+-->
+
 <!--List of current bikes-->
 <ul>
-    <li>Swen</li>
-    <li>JACK</li>
-    <li>Whytey</li>
-    <li>Tommy</li>
-    <li>Scrappy</li>
+    <li id="bike0"></li>
+    <li id="bike1"></li>
+    <li id="bike2"></li>
+    <li id="bike3"></li>
+    <li id="bike4"></li>
 </ul>
+
+
 
 <!--Table of current bikes specs-->
 <h2>Table showing my current bikes and their specifications</h2>

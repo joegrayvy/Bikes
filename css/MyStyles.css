@@ -1,20 +1,28 @@
 body {
     background-color: powderblue;
-}
+    }
+
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+*/
 
 h1 {
     text-align: Center;
-}
+    }
 
 h2 {
     text-align: Left;
-}
+    }
 
 h3 {
     text-align: Left;
-}
+    }
 
 table, th, td {
     border:1px solid black;
-}
+    }
 
