@@ -93,3 +93,9 @@ function validateForm() {
     passwordError.innerText = ""; // Clear any previous error messages
     return true; // Allow form submission
 }
+
+
+// JS Exercise 7 - Toggle dark mode button
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
