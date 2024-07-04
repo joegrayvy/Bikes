@@ -46,10 +46,12 @@ let bikesArray = "<ul>";
 let bikeDistanceArray = "<ul>";
 let totalDistance = 0;
 
+
 for (let i = 0; i < bikesLength; i++) {
-  bikesArray += "<li>" + bike[i] + "</li>";
-  bikeDistanceArray += "<li>" + bikeDistance[i] + "</li>";
-  totalDistance += bikeDistance[i];
+//  bikesArray += "<li>" + bike[i] + "</li>"; removed to add #link
+    bikesArray += '<li><a href="#' + bike[i] + '">' + bike[i] + '</a></li>';
+    bikeDistanceArray += "<li>" + bikeDistance[i] + "</li>";
+    totalDistance += bikeDistance[i];
 }
 
 bikesArray += "</ul>";
