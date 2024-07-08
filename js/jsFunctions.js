@@ -44,14 +44,14 @@ let bikesLength = bike.length;
 
 let bikesArray = "<ul>";
 let bikeDistanceArray = "<ul>";
-let totalDistance = 0;
+let sumDistance = 0;
 
 
 for (let i = 0; i < bikesLength; i++) {
 //  bikesArray += "<li>" + bike[i] + "</li>"; removed to add #link
     bikesArray += '<li><a href="#' + bike[i] + '">' + bike[i] + '</a></li>';
     bikeDistanceArray += "<li>" + bikeDistance[i] + "</li>";
-    totalDistance += bikeDistance[i];
+    sumDistance += bikeDistance[i];
 }
 
 bikesArray += "</ul>";
@@ -59,7 +59,7 @@ bikeDistanceArray += "</ul>";
 
 document.getElementById("bikes").innerHTML = "My Bikes are: " + bikesArray;
 document.getElementById("bikeDistance").innerHTML = "The distance for each Bike is: " + bikeDistanceArray;
-document.getElementById("totalDistance").innerHTML = "Total Distance: " + totalDistance;
+document.getElementById("sumDistance").innerHTML = "Sum of Distances: " + sumDistance;
 
 // Replaced this with the for loop above, and repeated for the distance
 /*

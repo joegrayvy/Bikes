@@ -1,6 +1,7 @@
 body {
     background-color: powderblue;
     color: black;
+    font-family: Arial, sans-serif;
     }
 
 /* JS Exercise 7 - Toggle Dark Mode */
@@ -19,14 +20,20 @@ ul {
 
 h1 {
     text-align: Center;
+    font-family: 'Times New Roman', serif;
     }
 
 h2 {
     text-align: Left;
+
     }
 
 h3 {
     text-align: Left;
+    }
+
+p {
+        font-family: Arial, sans-serif;
     }
 
 table, th, td {

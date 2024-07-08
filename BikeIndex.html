@@ -2,7 +2,7 @@
     Website to list my bikes and navigate through the different options.
     Part of the intro to JS course 2024
     Started a new webpage because the original Equipment Server instruction
-    manual lacked flexibility
+    manual lacked flexibility and was boring
     JG 27/May/2024
 -->
 
@@ -69,7 +69,7 @@
 <p>A: No because the correct number of bikes is n+1 (where n = the number of bikes you currently have)</p>
 <br>
 
-<h2>My Current Bikes <br>(click to go to the relevent area or read on for a summary)</h2>
+<h3>My Current Bikes <br>(click to go to the relevent area or read on for a summary)</h2>
 
 
 
@@ -84,19 +84,32 @@
 
 <p id="bikeDistance"></p>
 
-<p id="totalDistance"></p>
+<p id="sumDistance"></p>
 
 <!--******************************************************-->
 <!-- TRY TO ADD STRAVA API HERE TO READ TOTAL DTSANCE LIVE-->
 <!--******************************************************-->
 
+<!-- 
+Added and API to pull data from Strava to my webpage, went for total distance
+Struggled to get this to work, spent some time trying to debug but I think Strava 
+has some authorisation requirements that I need to incorporate
+-->
+
+<h2>My 2024 Strava Total Distance</h2>
+<div id="totalDistance">Loading...</div>
+<script src="js/stravaApi.js"></script>
+
+<p>For more stats see my Strava profile: <a href="https://www.strava.com/athletes/418782" target="_blank" rel="noopener noreferrer">https://www.strava.com/athletes/418782</a> and give me a follow.</p>
+
 <!-- JS EXERCISE 5 - character count button-->
-<!--moved into the feedback from below-->
+<!--moved into the feedback form below-->
 
 
 
 <!--Table of current bikes specs-->
 <h2>Table showing my current bikes and their specifications</h2>
+<h3>Click name or image to open a dedicated webpage for that bike)</h3>
 <table>
     <!--Headings-->
     <tr>
@@ -121,14 +134,18 @@
         <td>Shimano Ultegra 50/34 x 11-32</td>
         <td>Zipp 404 Firecrest</td>
         <td>
-            <img src="images\Swen.jpg" alt="Swen" width="173" height="124" style="opacity: 0.75;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
+            <img src="images\Swen.jpg" alt="Swen" width="173" height="124"
+            style="opacity: 0.75;"
+            onmouseover="this.style.opacity='1'"
+            onmouseout="this.style.opacity='0.75'"
+            onclick="location.href='/Swen.html'">
         </td>
     </tr>
 
     <!--JACK-->
     <tr>
         <!--Link to JACK section in name-->
-        <td id="JACK"><a href="#Jack">JACK</a></td>
+        <td id="JACK"><a href="/JACK.html" target="_blank" rel="noopener noreferrer">JACK</a></td>
         <td>J. Laverack</td>
         <td>J.ACK</td>
         <td>Naked Titanium</td>
@@ -136,14 +153,18 @@
         <td>Shimano GRX 48/31 x 11-42</td>
         <td>Aera AR30</td>
         <td>
-            <img src="images\Jack.jpg" alt="Jack" width="173" height="124" style="opacity: 0.75;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
+            <img src="images\Jack.jpg" alt="Jack" width="173" height="124"
+            style="opacity: 0.75;"
+            onmouseover="this.style.opacity='1'"
+            onmouseout="this.style.opacity='0.75'"
+            onclick="window.open('/JACK.html', '_blank', 'noopener noreferrer')">
         </td>
     </tr>
 
     <!--Whytey-->
     <tr>
         <!--Link to Whytey section in name-->
-        <td id="Whytey"><a href="#Whytey">Whytey</a></td>
+        <td id="Whytey"><a href="/Whytey.html" target="_blank" rel="noopener noreferrer">Whytey</a></td>
         <td>Whyte</td>
         <td>629</td>
         <td>Bronze/Copper</td>
@@ -151,14 +172,18 @@
         <td>Sram NX Eagle 12-speed 32T x 11-50</td>
         <td>WTB ST i25</td>
         <td>
-            <img src="images\Whyte.jpg" alt="Whyte" width="173" height="124" style="opacity: 0.75;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.75'">
+            <img src="images/Whyte.jpg" alt="Whyte" width="173" height="124" 
+            style="opacity: 0.75;" 
+            onmouseover="this.style.opacity='1'" 
+            onmouseout="this.style.opacity='0.75'" 
+            onclick="window.open('/Whytey.html', '_blank', 'noopener noreferrer')">
         </td>
     </tr>
 
     <!--Tommy-->
     <tr>
         <!--Link to Tommy section in name-->
-        <td id="Tommy"><a href="#Tommy">Tommy</a></td>
+        <td id="Tommy"><a href="/Tommy.html" target="_blank" rel="noopener noreferrer">Tommy</a></td>
         <td>Felt</td>
         <td>B16</td>
         <td>White & Black</td>
@@ -173,7 +198,7 @@
     <!--Scrappy-->
     <tr>
         <!--Link to Scrappy section in name-->
-        <td id="Scrappy"><a href="#Scrappy">Scrappy</a></td>
+        <td id="Scrappy"><a href="/Scrappy.html" target="_blank" rel="noopener noreferrer">Scrappy</a></td>
         <td>Raleigh</td>
         <td>Reclaimed</td>
         <td>Black & Pink</td>
@@ -203,29 +228,13 @@
     <li>Eddie</li>
     <li>Crux</li>
 
+
+   <li>Oxford Ute</li>
+    <li>Eddie</li>
+    <li>Crux</li>
+
     
-</ul>
-<br>
-
-<!--SWEN-->
-
-<h3 id="Swen">Swen</h3>
-<img src="images\swen.jpg" alt="swen" width="403" height="302">
-<p>My current racing bike</p>
-
-<p><a href="#Top">Top</a></p>
-
-
-</body>
-
-
-<!-- FEEDBACK FORM -->
-<form action="http://example.php" onsubmit="return validateForm()">
-    <fieldset>
-        <legend>Feedback Form</legend>
-
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required="required"/><br>
+    <input type="text" id="username" name="username" required="required"/><br>
         
         <label for="password">Password :</label>
         <input type="password" id="password" name="password" required="required"/>(8 or more characters)<br><br>
