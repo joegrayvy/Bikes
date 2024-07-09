@@ -1,8 +1,10 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const accessToken = '19c67f3ebd6711e5517822373a23a16b09a4d121'; // Access tokens expire after 6 hours
+    const accessToken = '19c67f3ebd6711e5517822373a23a16b09a4d121'; // Access tokens expire after 6 hours, how to sort this?
 
 // Having a problem getting Stava API's to work, they seem to require the user to log in themselves
-// to access the data using Strava's OAuth 2.0
+// to access the data using Strava's OAuth 2.0, not sure how to implement OAuth 2.0
 
 // Strava API endpoint to fetch activities, focus on all activities for a full year
     const apiEndpoint = 'https://www.strava.com/api/v3/athlete/activities';

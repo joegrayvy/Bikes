@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
-
 <head>
-    
-    <link rel="stylesheet" href="css/MyStyles.css">
-    <script src="slideShow.js"></script>
-    
+
+<link rel="stylesheet" href="/css/MyStyles.css"> <!-- Link to external CSS file -->
+
 
 </head>
 
@@ -18,19 +16,53 @@
 
 
 <body>
-    
-<p id="Top"></p>
 
 <h1>Swen<br></h1>
+<p id="Top"></p>
 
-<div class="center">
-<img src="images\swen.jpg" alt="swen" width="403" height="302">
-<p>My current racing bike</p>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="/images/slideShow/S1.jpg" style="width:100%">
+  <div class="text">The valley</div>
 </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="/images/slideShow/S2.jpg" style="width:100%">
+  <div class="text">I can see the sea</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="/images/slideShow/S3.jpg" style="width:100%">
+  <div class="text">Rainbow</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script src="/js/slideShow.js"></script> <!-- Link to external JavaScript file -->
+
+
 
 <p>
     I bought Swen new in April 2021 after I fell in love with the colour scheme, you should always select a bike based on the colour and the look of it, 
     if you don't like the look you'll never be happy riding it.
+</p>
+<br>
+<p> 
+    The Colour is listed as Carbon Chameleon Silver Green, the paint has a thin layup and you can see the naked carbon in places with a green and silver shimmer that comes through, especially vivid in the sun.
 </p>
 
 
