@@ -1,4 +1,6 @@
 
+  // CSS code from W3Schools
+  
   let slideIndex = 1;
   showSlides(slideIndex);
 

@@ -168,7 +168,7 @@ has some authorisation requirements that I need to incorporate
         <td>Whyte</td>
         <td>629</td>
         <td>Bronze/Copper</td>
-        <td>2019</td>
+        <td>2018</td>
         <td>Sram NX Eagle 12-speed 32T x 11-50</td>
         <td>WTB ST i25</td>
         <td>
@@ -202,7 +202,7 @@ has some authorisation requirements that I need to incorporate
         <td>Raleigh</td>
         <td>Reclaimed</td>
         <td>Black & Pink</td>
-        <td>???</td>
+        <td>2016</td>
         <td>Custom single speed</td>
         <td>Basic box sections</td>
         <td>
@@ -212,6 +212,7 @@ has some authorisation requirements that I need to incorporate
 
 
 </table>
+
 
 
 <h2>My retired bikes</h2>
@@ -282,7 +283,7 @@ has some authorisation requirements that I need to incorporate
 
 <!--PHP EXERCISE -->
 <h2>Account setup</h2>
-<form action="http://localhost/process_form.php" method="post">
+<form action="http://localhost:8080/bikes/process_form.php" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required><br><br>
     <label for="email">Email:</label>
@@ -290,10 +291,11 @@ has some authorisation requirements that I need to incorporate
     <input type="submit" value="Submit">
 </form>
 <!--
-    Test that this works. Installed MAMP and placed php files into:
-    C:\\MAMP\htdocs\
-    Run MAMP, server goes live on startup
+    Test that this works. 
 
+    Installed XAMP and placed process_form.php in C:\Program Files\xampp\htdocs\bikes
+    Run XAMP and start Apache and MySQL servers running port 8080 and 4433 for APache and 3308 for MySQL
+    IT WORKS!
 
 -->
 
