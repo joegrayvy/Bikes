@@ -1,4 +1,4 @@
-
+// Code cobbled together from strava user guide and forums
 
 document.addEventListener('DOMContentLoaded', function() {
     const accessToken = '19c67f3ebd6711e5517822373a23a16b09a4d121'; // Access tokens expire after 6 hours, how to sort this?
